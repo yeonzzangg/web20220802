@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        h1 {
+            background-color: yellow;
+        }
+
+        .note.error {
+            background-color: blue;
+        } /*클래스2개니까 20점*/
+
+        .note {
+            background-color: red;
+            text-align: right;
+        } /*클래스 1개니까 10점 = 20점이 적용됨*/
+
+        .error {
+            text-align: center;
+        }
+
+        #head1 {
+            background-color: beige;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>specificity 명시도</h1>
+    <p>id 선택자 : 100점</p>
+    <p>class 선택자 : 10점</p> 
+    <p>element 선택자 : 1점</p>
+    <p>점수가 같으면 아래쪽에 있는 속성이 적용됨</p>
+    <p>클래스 점수(갯수)가 아무리 많아도 id가 이김(적용됨)</p>
+
+    <hr>
+
+    <!-- h1.note.error*5>lorem2 -->
+    <h1 id="head1" class="note error">Lorem, ipsum.</h1>
+    <h1 class="note error">Animi, aspernatur!</h1>
+    <h1 class="note error">Laboriosam, culpa?</h1>
+    <h1 class="note error">Nostrum, totam?</h1>
+    <h1 class="note error">Amet, ea.</h1>
+</body>
+</html>

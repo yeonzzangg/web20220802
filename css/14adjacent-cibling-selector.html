@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* 인접한 형제 셀렉터 */
+        h1 + p {
+            color: blue;
+        }
+
+        .error + p {
+            background-color: yellow;
+        }
+
+        .note + p {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <!-- h1.error+p>lorem1^h1.note+p>lorem1 -->
+    <h1 class="error"></h1>
+    <p>
+        Lorem.
+    </p>
+    <h1 class="note"></h1>
+    <p>
+        Lorem.
+    </p>
+</body>
+</html>
