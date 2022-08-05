@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .flexbox {
+            display: flex;
+        }
+
+        .right {
+            background-color: lightgreen;
+            flex: 1;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .right > h1 {
+            font-size: 48px;
+        }
+
+        .right > p.txt {
+            font-size: 18px;
+        }
+
+        .right > p.btn {
+            width: 300px;
+            height: 50px;
+            background-color: green;
+            margin: 10px auto;
+        }
+
+        .left {
+            background-color: #eee;
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flexbox">
+        <div class="right">
+            <h1>HTML</h1>
+            <p class="txt">The language for building web pages</p>
+            <p class="btn">Learn HTML</p>
+            <p class="btn">Video Tutorial</p>
+            <p class="btn">HTML Reference</p>
+            <p class="btn">Buy Certificate</p>
+        </div>
+        <div class="left">
+        </div>
+    </div>
+</body>
+
+</html>
